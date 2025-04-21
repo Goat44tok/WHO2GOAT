@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOAT Token - Messi vs Ronaldo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Dark/Light Mode Button -->
+  <button id="mode-toggle" class="mode-toggle">🌙</button>
+  
+  <nav class="navbar">
+    <div class="container">
+      <img src="https://r.resimlink.com/nRvLG9.jpg" alt="GOAT Token Logo" class="logo" />
+      <span class="logo-text">GOAT TOKEN</span>
+      <ul class="nav-links">
+        <li><a href="#about">What is GOAT?</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#community">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h2>The GOAT Battle Begins 🏆</h2>
+      <p>The greatest token of all time, just like the greatest footballers to ever play the game.</p>
+      <a href="#about" class="btn">Enter the Arena</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Welcome to the GOAT Token Universe</h2>
+      <p>GOAT Token is the cryptocurrency inspired by the legendary rivalry of Messi and Ronaldo. Just like them, we strive for greatness, aiming to dominate the Solana blockchain with speed, utility, and a passionate community.</p>
+      <div class="token-info">
+        <div><strong>Symbol:</strong> GOAT</div>
+        <div><strong>Blockchain:</strong> Solana</div>
+        <div><strong>Total Supply:</strong> 1,000,000,000</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="messi-ronaldo" class="section dark">
+    <div class="container">
+      <h2>The Legendary Duel: Messi vs Ronaldo</h2>
+      <p>Much like the rivalry between Messi and Ronaldo, GOAT Token is set to conquer the crypto space. Who will be crowned the greatest? Cast your vote now!</p>
+      
+      <div class="battle">
+        <div class="player">
+          <img src="https://r.resimlink.com/8iQWY6JpSo.png" alt="Messi" />
+          <h3>Messi</h3>
+          <p>Master of the game, GOAT Token is designed for champions like Messi!</p>
+          <button class="vote-btn" onclick="vote('messi')">Vote for Messi</button>
+          <div class="stats">
+            <h4>Messi's Stats:</h4>
+            <ul>
+              <li>🏆 7 Ballon d'Or</li>
+              <li>⚽ 700+ Career Goals</li>
+              <li>💥 5 UEFA Champions Leagues</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="vs">
+          <h2>VS</h2>
+        </div>
+        
+        <div class="player">
+          <img src="https://r.resimlink.com/FIQ_RahU.webp" alt="Ronaldo" />
+          <h3>Ronaldo</h3>
+          <p>Unstoppable and relentless, GOAT Token reflects Ronaldo’s winning mindset.</p>
+          <button class="vote-btn" onclick="vote('ronaldo')">Vote for Ronaldo</button>
+          <div class="stats">
+            <h4>Ronaldo's Stats:</h4>
+            <ul>
+              <li>🏆 5 Ballon d'Or</li>
+              <li>⚽ 800+ Career Goals</li>
+              <li>💥 5 UEFA Champions Leagues</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="vote-results" class="results">
+        <h3>Vote Results:</h3>
+        <p>Messi: <span id="messi-votes">0</span> votes</p>
+        <p>Ronaldo: <span id="ronaldo-votes">0</span> votes</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="section">
+    <div class="container">
+      <h2>Tokenomics</h2>
+      <ul>
+        <li>🔥 40% - Community & Airdrops</li>
+        <li>👨‍💻 20% - Development & Innovation</li>
+        <li>💧 20% - Liquidity</li>
+        <li>📣 15% - Marketing & Partnerships</li>
+        <li>🔒 5% - Team (Locked)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section dark">
+    <div class="container">
+      <h2>Our Roadmap to Glory</h2>
+      <div class="roadmap">
+        <div><strong>Q2 2025:</strong> Token Launch, Website, Community Building</div>
+        <div><strong>Q3 2025:</strong> Airdrops, Exchange Listings, Expanding Partnerships</div>
+        <div><strong>Q4 2025:</strong> NFT Launch, DEX Integrations</div>
+        <div><strong>Q1 2026:</strong> DAO Launch, Staking & Rewards</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" class="section">
+    <div class="container">
+      <h2>Join the GOAT Community</h2>
+      <p>Become a part of our growing community and help us make GOAT Token the dominant force on Solana.</p>
+      <div class="social-links">
+        <a href="https://t.me/goattoken" target="_blank">Telegram</a>
+        <a href="https://twitter.com/goattoken" target="_blank">Twitter</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 GOAT Token. Powered by Solana 🧑‍💻</p>
+    </div>
+  </footer>
+
+  <!-- Oylama Fonksiyonu -->
+  <script>
+    let messiVotes = 0;
+    let ronaldoVotes = 0;
+
+    function vote(player) {
+      if (player === 'messi') {
+        messiVotes++;
+      } else if (player === 'ronaldo') {
+        ronaldoVotes++;
+      }
+      document.getElementById("messi-votes").textContent = messiVotes;
+      document.getElementById("ronaldo-votes").textContent = ronaldoVotes;
+    }
+
+    // Dark/Light Mode Toggle
+    const toggleButton = document.getElementById('mode-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        toggleButton.textContent = '🌞'; // Light mode
+      } else {
+        toggleButton.textContent = '🌙'; // Dark mode
+      }
+    });
+  </script>
+</body>
+</html>

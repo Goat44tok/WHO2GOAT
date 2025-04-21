@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2, h3, p {
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  background-color: #ffbc00;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 50px;
+}
+
+.navbar .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffbc00;
+  margin-left: 10px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.navbar .nav-links li {
+  margin: 0 20px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://www.example.com/hero-image.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Battle Section */
+#about, #messi-ronaldo, #tokenomics, #roadmap, #community {
+  background-color: #2a2a2a;
+}
+
+#about .container, #messi-ronaldo .container, #tokenomics .container {
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+.battle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.player {
+  margin: 20px;
+  text-align: center;
+}
+
+.player img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.vote-btn {
+  background-color: #ffbc00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.vote-btn:hover {
+  background-color: #e69a00;
+}
+
+.vs h2 {
+  font-size: 2rem;
+  color: #ffbc00;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stats h4 {
+  font-size: 1.2rem;
+  color: #ffbc00;
+}
+
+.stats ul {
+  list-style-type: none;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results p {
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Dark/Light Mode Button */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffbc00;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
